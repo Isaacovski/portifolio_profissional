@@ -498,7 +498,30 @@ work__link:hover{
 
 
 /*=============== FOOTER ===============*/
+.footer{
+  background-color: var(--container-color);
+}
 
+.footer__container{
+  padding-block: 3rem 2 rem;
+}
+
+.footer__links{
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+.footer__link{
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+
+.footer__link:hover{
+  color: var(--first-color-light);
+  font-size: var(--small-font-size);
+  text-align: center;
+}
 
 /*=============== SCROLL BAR ===============*/
 
