@@ -495,8 +495,69 @@ work__link:hover{
 }
 
 /*=============== CONTACT ===============*/
+.contact.container{
+  row-gap: 4rem;
+}
 
+.contact__group,
+.contact__form {
+  gap: 1em;
+}
 
+.contact__form {
+  position: relative;
+}
+.contact__input{
+  padding: 1.25;
+  background-color: var(--container-color);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.contact__input::placeholder{
+  color: var(--text-color-light);
+}
+
+.contact__area{
+  height: 10rem;
+  resize: none;
+}
+
+.contact__social{
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.contact__social-link{
+  color: var(--text-color);
+  display: inline-flex;
+  column-gap: .25rem;
+  align-items: center;
+  transition: color .4s;
+}
+
+.contact__social-link i {
+  font-size: 1.5rem;
+}
+
+.contact__social-link span{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.contact__social:hover{
+  color: var(--first-color-light);
+}
+
+.contact__message {
+  position: absolute;
+  left: 0%;
+  bottom: -2rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
 /*=============== FOOTER ===============*/
 .footer{
   background-color: var(--container-color);
@@ -520,7 +581,7 @@ work__link:hover{
 .footer__link:hover{
   color: var(--first-color-light);
   font-size: var(--small-font-size);
-  text-align: center;
+  text-align: center ;
 }
 
 /*=============== SCROLL BAR ===============*/
