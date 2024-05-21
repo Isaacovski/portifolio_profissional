@@ -301,15 +301,15 @@
             <fiv class="contact__container container grid">
                <form action="" class="contact__form grid" id="contact-form">
                   <div class="contact__group grid">
-                     <input type="text" name="Names" placeholder="Nomes" required class="contact__input">
-                     <input type="email" name="" placeholder="Email" required class="contact__input">
+                     <input type="text" name="name" placeholder="Nomes" required class="contact__input">
+                     <input type="email" name="email" placeholder="Email" required class="contact__input">
                   </div>
 
-                  <textarea name="" placeholder="Message" required class="contact__input contact__area"></textarea>
+                  <textarea name="message" placeholder="Message" required class="contact__input contact__area"></textarea>
              
                   <button type="submit" class="button contact__button">Send Message</button>
 
-                  <p class="contact__message" id="contact-message">Message</p>
+                  <p class="contact__message" id="contact-message"></p>
                </form>
 
                <div class="contact__social grid">
@@ -362,8 +362,8 @@
       <script src=""></script>
 
       <!--=============== EMAIL JS ===============-->
-      <script src=""></script>
-
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
    </body>

@@ -26,16 +26,42 @@ const linkAction = () => {
 }
 navLink.forEach(n =>n.addEventListener('click', linkAction))
 /*=============== ADD BLUR HEADER ===============*/
+/*=============== ADD BLUR HEADER ===============*/
 const scrollHeader = () => {
-    const header = document.getElementById('header')
-    this.scrollY >= 50 ? header.classList.add('blur-header') 
-    : header.classList.remove('blur-header') 
+    const header = document.getElementById('header');
+    window.scrollY >= 50 ? header.classList.add('blur-header') 
+                         : header.classList.remove('blur-header');
 }
-window.addEventListener('scroll', blurHeader)
+
+window.addEventListener('scroll', scrollHeader);
 
 /*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message')
 
+const sendEmail = (e) => {
+    e.preventDefault()
 
+    //serviceID    templateID    FORM   PUBLUQUEKey
+    emailjs.sendForm('service_phngu96','template_ksd33xe','#contact-form','hCs2zaisqosRkdian')
+    .then(() =>{
+        //Show sent message
+        contactMessage.textContent = 'Mensage enviada com sucesso ✅'
+
+        //remove message depois de 5 segundos
+        setTimeout(()=>{
+            contactMessage.textContent = 'menssage não enviada '
+        },5000)
+
+        //Clear input fields
+        contactForm.reset()
+    }, ()=>{
+        //show error message
+        contactMessage.textContent = 'message not sent ( service error) ❌   '
+    })
+}
+
+contactForm.addEventListener('submit', sendEmail)
 /*=============== SHOW SCROLL UP ===============*/ 
 
 
