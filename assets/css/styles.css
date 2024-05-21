@@ -266,7 +266,7 @@ img {
 }
 
 .home__name {
-  font-size: var(--biggest-font-size);
+  font-size: var(--biggest-font-size );
   font-weight: var(--font-bold);
   word-break: break-word;
   margin-bottom: 1rem;
@@ -500,7 +500,7 @@ work__link:hover{
 }
 
 /*=============== CONTACT ===============*/
-.contact.container{
+.contact__container{
   row-gap: 4rem;
 }
 
@@ -513,7 +513,7 @@ work__link:hover{
   position: relative;
 }
 .contact__input{
-  padding: 1.25;
+  padding: 1.25rem;
   background-color: var(--container-color);
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
