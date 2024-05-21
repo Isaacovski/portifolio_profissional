@@ -585,7 +585,17 @@ work__link:hover{
 }
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: hsl(var(--hue), 20%, 20%);
+}
+::-webkit-scrollbar-thumb{
+  background-color: hsl(var(--hue), 20%, 30%);
+}
 
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(var(--hue), 20%, 40%);
+}
 
 /*=============== SCROLL UP ===============*/
 
