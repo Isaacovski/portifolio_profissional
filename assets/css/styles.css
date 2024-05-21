@@ -598,7 +598,23 @@ work__link:hover{
 }
 
 /*=============== SCROLL UP ===============*/
+.crollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--container-color);
+  display: inline-flex;
+  padding: 6px;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px hsla(var(--hue), 30%, 8%,  .3);
+  z-index: var(--z-tooltip);
+  transition: bottom .4s, transform .4s ;
+}
 
+.scrollup:hover{
+  transform: rotateY(-.5rem);
+}
 
 /* Show Scroll Up */
 
