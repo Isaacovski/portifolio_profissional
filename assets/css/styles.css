@@ -148,7 +148,7 @@ img {
   width: 100%;
   top: 0%;
   left: 0%;
-  background-color: transparent;
+  background-color: #181E39;
   z-index: var(--z-fixed);
 }
 
@@ -177,7 +177,7 @@ img {
     position: fixed;
     top: 0%;
     right: -1000%;
-    background-color: hsla(var(--hue), 70%,4%,  .2);
+    background-color: #181E39;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     width: 50%;
@@ -263,6 +263,7 @@ img {
   mask-image: linear-gradient(to bottom,
   hsla(var(--hue),40%,16%)60%, 
   transparent 100%);
+  border-radius: 20%;
 }
 
 .home__name {
@@ -333,7 +334,7 @@ img {
 /*=============== BUTTON ===============*/
 .button{
   display: inline;
-  justify-content: center;
+  justify-self: center;
   background-color: var(--first-color);
   color: var(--font-semi-bold);
   padding: 1.25rem 2rem;
@@ -569,7 +570,8 @@ work__link:hover{
 }
 
 .footer__container{
-  padding-block: 3rem 2 rem;
+  padding-block: 3rem 2rem;
+  row-gap: 3rem;
 }
 
 .footer__links{
@@ -587,6 +589,12 @@ work__link:hover{
   color: var(--first-color-light);
   font-size: var(--small-font-size);
   text-align: center ;
+}
+
+.footer__copy {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  text-align: center;
 }
 
 /*=============== SCROLL BAR ===============*/
@@ -667,6 +675,7 @@ work__link:hover{
   }
   .home__scroll {
     grid-column: 1/3;
+    justify-content: center;
   }
   .work__container{
     grid-template-columns: repeat(2,350px);
@@ -729,6 +738,7 @@ work__link:hover{
   }
   .home__img{
     width: 350px;
+    border-radius: 30%;
   }
   .home__name{
     margin-bottom: 1.5rem;
@@ -767,6 +777,7 @@ work__link:hover{
   }
   .about__img{
     width: 320px;
+    border-radius: 20%;
   }
   .about__description{
     margin-bottom: 3rem;
@@ -795,7 +806,8 @@ work__link:hover{
   }
 
   .services__container{
-    grid-template-columns: 2, 350px;
+    grid-template-columns: repeat(2, 350px);
+
     gap: 6rem 13rem;
   }
   .services__icon{
